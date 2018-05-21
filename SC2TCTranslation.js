@@ -22,7 +22,6 @@
     }
 
     for(var i = 0; i < funcList.length; i ++){
-        console.log(funcList[i], typeof $.fn[funcList[i]])
         if(typeof $.fn[funcList[i]] != "undefined"){
             var tmp = $.fn[funcList[i]];
             $.fn[funcList[i]] = function(){
